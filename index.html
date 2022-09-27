@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=PT+Sans&family=Pacifico&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>lian</title>
+</head>
+<style>
+    /* inicio corazon latiendo */
+    /*
+    .texto {
+        font-family: 'VT323', monospace;
+        position: absolute;
+        margin: 120px 180px;
+        z-index: 9;
+        font-size: 40px;
+        text-align: center;
+        color: #FFF;
+        line-height: 40px;
+        text-shadow: -2px 0 #D5093C, 0 2px #D5093C, 2px 0 #D5093C, 0 -1px #D5093C, -2px 2px 3px #D5093C;
+        -webkit-animation: justBeat 0.7s ease 0s infinite normal;
+        -moz-animation: justBeat 0.7s ease 0s infinite normal;
+        animation: justBeat 0.7s ease 0s infinite normal;
+    }
+    
+    @-webkit-keyframes beat {
+        0% {
+            -webkit-transform: scale(1) rotate(225deg);
+            -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+        50% {
+            -webkit-transform: scale(1.1) rotate(225deg);
+            -webkit-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+        }
+        100% {
+            -webkit-transform: scale(1) rotate(225deg);
+            -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+    }
+    
+    @-moz-keyframes beat {
+        0% {
+            -moz-transform: scale(1) rotate(225deg);
+            -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+        50% {
+            -moz-transform: scale(1.1) rotate(225deg);
+            -moz-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+        }
+        100% {
+            -moz-transform: scale(1) rotate(225deg);
+            -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+    }
+    
+    @keyframes beat {
+        0% {
+            transform: scale(1) rotate(225deg);
+            box-shadow: 0 0 40px #d5093c;
+        }
+        50% {
+            transform: scale(1.1) rotate(225deg);
+            box-shadow: 0 0 70px #d5093c;
+        }
+        100% {
+            transform: scale(1) rotate(225deg);
+            box-shadow: 0 0 40px #d5093c;
+        }
+    }
+    
+    @-webkit-keyframes justBeat {
+        0% {
+            -webkit-transform: scale(1);
+            -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+        50% {
+            -webkit-transform: scale(1.1);
+            -webkit-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+        }
+        100% {
+            -webkit-transform: scale(1);
+            -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+    }
+    
+    @-moz-keyframes justBeat {
+        0% {
+            -moz-transform: scale(1);
+            -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+        50% {
+            -moz-transform: scale(1.1);
+            -moz-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+        }
+        100% {
+            -moz-transform: scale(1);
+            -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+        }
+    }
+    
+    @keyframes justBeat {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 40px #d5093c;
+        }
+        50% {
+            transform: scale(1.1);
+            box-shadow: 0 0 70px #d5093c;
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 40px #d5093c;
+        }
+    }
+    
+    #cor {
+        position: relative;
+        width: 500px;
+        height: 450px;
+        margin: 0 auto;
+    }
+    
+    .corazon {
+        position: absolute;
+        z-index: 2;
+        background: -moz-linear-gradient(-180deg, #F50A45 0%, #d5093c 40%);
+        background: -webkit-gradient(linear, right 50%, left 50%, color-stop(0%, #F50A45), color-stop(40%, #d5093c));
+        background: -webkit-linear-gradient(-180deg, #F50A45 0%, #d5093c 40%);
+        background: linear-gradient(-180deg, #F50A45 0%, #d5093c 40%);
+        -webkit-animation: beat 0.7s ease 0s infinite normal;
+        -moz-animation: beat 0.7s ease 0s infinite normal;
+        animation: beat 0.7s ease 0s infinite normal;
+    }
+    
+    .corazon.centro {
+        background: -moz-linear-gradient(-45deg, #F50A45 0%, #d5093c 40%);
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #B80734), color-stop(40%, #d5093c));
+        background: -webkit-linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+        background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+    }
+    
+    .corazon.arriba {
+        z-index: 3;
+    }
+    
+    .cara {
+        top: 50px;
+        width: 220px;
+        height: 220px;
+        -moz-border-radius: 220px;
+        -webkit-border-radius: 220px;
+        border-radius: 220px;
+    }
+    
+    .centro {
+        width: 210px;
+        height: 210px;
+        bottom: 100px;
+        left: 145px;
+        font-size: 0;
+        text-indent: -9999px;
+    }
+    
+    .izquierda {
+        left: 62px;
+    }
+    
+    .derecha {
+        right: 62px;
+    }
+    
+    .texto span {
+        font-size: 28px;
+    }
+    */
+    /*fin corazon */
+    /*ABAJO*/
+
+    @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+    body {
+        /*background-color: #f67d92;*/
+        font-family: "Patrick Hand SC", cursive;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .texto {
+        padding-left: 2.3rem;
+        font-size: 1.1rem;
+    }
+
+    div.fonto {
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+
+    .container {
+        padding: 0px 20px;
+    }
+
+    .fonto {
+        --borderWidth: 3px;
+        background: #1D1F20;
+        position: relative;
+        border-radius: var(--borderWidth);
+    }
+
+    .fonto:after {
+        content: '';
+        position: absolute;
+        top: calc(-1 * var(--borderWidth));
+        left: calc(-1 * var(--borderWidth));
+        height: calc(100% + var(--borderWidth) * 2);
+        width: calc(100% + var(--borderWidth) * 2);
+        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+        /*    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);*/
+        border-radius: calc(2 * var(--borderWidth));
+        z-index: -1;
+        animation: animatedgradient 3s ease alternate infinite;
+        background-size: 300% 300%;
+    }
+
+    @keyframes animatedgradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /*continuidad b*/
+
+    h1.titulo {
+        text-align: center;
+    }
+
+    .imajen {
+        width: 14rem;
+    }
+
+    .lian {
+        text-align: center;
+    }
+
+    /*FIN ABAJO*/
+
+    .titulo1 {
+        text-align: center;
+    }
+
+    #cord {
+        position: relative;
+        width: 500px;
+        height: 450px;
+        margin: 0 auto;
+    }
+
+    .imgmary {
+        padding: 16px;
+        border-radius: 1pc;
+
+    }
+
+    .sub {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .parate {
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <!--
+    <div id="cor">
+        <div class="corazon izquierda cara arriba"></div>
+        <div class="corazon centro"></div>
+        <div class="texto">
+            <br /><span> NELY </span><br />
+           
+        </div>
+        <div class="corazon derecha cara"></div>
+
+    </div>
+-->
+    <div class="container" id="cord">
+
+        <div class="row mt-4 fonto">
+
+            <img class="imgmary" src="tre.png" width="40px" ; height="450px" ; alt="" srcset="">
+
+            <div class="col-12 texto1 mt-4">
+                <h1 class="titulo1"> &#128154 mary &#128154</h1>
+                <p class="sub">&#x1F340</p>
+                <br>
+
+                <br>
+                <p class="parate"> Amor eres la historia más bonita que el destino escribió en mi vida.
+                    <br>
+                    <br>
+
+                    <!-- <a href="sguinte.html" class="btn btn-danger">Sguiente</a> -->
+                    <br>
+                <p></p>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <img class="imajen" src="" alt="" srcset="">
+                    <br>
+                    <p></p>
+                </div>
+
+                <div class="col-4">
+
+                    <br><br><br><br><br>
+
+                    <a href="sguinte.html" class="btn btn-danger">Sguiente</a>
+                    <br>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <P></P>
+        <br>
+
+    </div>
+    <br>
+
+    </div>
+
+</body>
+
+</html>
